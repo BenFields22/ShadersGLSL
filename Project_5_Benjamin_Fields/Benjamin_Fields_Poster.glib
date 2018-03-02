@@ -1,0 +1,28 @@
+##OpenGL GLIB
+Perspective 90
+LookAt 0 0 3  0 0 0  0 1 0
+Noise3D 128
+
+Vertex   wood.vert
+Fragment wood.frag
+Program  Wood    \
+		uNoiseAmp <0.0 22.9561 100.0> \
+		uNoiseFreq <0. 0.5183 10.>   \
+		uNoiseFreqWood <0. 1.95 10.>   \
+		uKa <0. 0.0915 1.0>                        \
+		uKd <0. 0.9939 1.0>                        \
+		uKs <0. 0.4451 1.0>                        \
+		uShininess <1. 225.18 1000.>               \
+		uLightX <-20. 5. 20.>                   \
+		uLightY <-20. 10. 20.>                  \
+		uLightZ <-20. 20. 20.>                  \
+		uScale <0.1 106.98 1000.>                  \
+		uDegreesZ <0.0 171.03 360.>                  \
+		uDegreesX <0.0 146.53 360.>                  \
+		uSpecularColor {1. 1. 1. 1.}     \
+		uFlat <false>         \
+		uDarkWood {0.60 0.24 0.09 1.0} \
+		uLightWood {0.97 0.53 0.15 1.0}
+
+obj giraffe.obj
+#Quad XY 0.5 5.0 5.0

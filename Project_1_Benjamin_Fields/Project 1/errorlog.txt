@@ -1,0 +1,4 @@
+
+0(28) : error C1008: undefined variable "sc"
+0(29) : error C1008: undefined variable "tc"
+

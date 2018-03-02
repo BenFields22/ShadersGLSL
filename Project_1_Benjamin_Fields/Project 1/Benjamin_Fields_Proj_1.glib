@@ -1,0 +1,17 @@
+##OpenGL GLIB
+Perspective 90
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex   EllipseProj1.vert
+Fragment EllipseProj1.frag
+Program  BenjaminFieldsProj1  			\
+		uSmooth <false>		\
+		uAd <0 0.1 1.0>	\
+		uBd <0 0.1 1.0>	\
+		uTol <0. 0.005 .10>	\
+		uSquareColor {1. .5 0.}
+
+Color 1  1  1
+#Torus  1.  .5  60 60
+#Sphere 1. 60 60
+obj giraffe.obj
