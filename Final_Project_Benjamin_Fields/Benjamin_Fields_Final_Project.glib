@@ -1,0 +1,28 @@
+##OpenGL GLIB
+Perspective 70
+LookAt  30 30 -80     0 0 0    0 1 0
+Background 0.35 0.92 1.0
+Noise3D 128
+Timer 10
+
+Vertex   terrain.vert
+Fragment terrain.frag
+Program terrain  				
+QuadXZ 0.0 70.0 60 60
+
+Vertex   water.vert
+Fragment water.frag
+Program water 								\
+    uKa <0. 0.0 1.0>                        \
+    uKd <0. 0.75 1.0>                       \
+    uKs <0. 1.0 1.0>                        \
+    uShininess <1. 290. 1000.>              \
+    uLightX <-20. 0.0 50.>                  \
+    uLightY <-20. 30. 50.>                  \
+    uLightZ <-90. -80. 20.>                 \
+    uNoiseAmp <0.0 1.06 5.0> 				\
+	uNoiseFreq <0. 0.22 10.> 				\
+    uFlat <false> 							\
+    uSpecularColor {1. 1. 1. 1.} 
+
+QuadXZ 0.2 70.0 70 70
